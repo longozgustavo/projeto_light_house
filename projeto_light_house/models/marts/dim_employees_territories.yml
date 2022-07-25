@@ -4,7 +4,21 @@ models:
   - name: dim_employees_territories
     columns:
       - name: employee_sk
-        description: The primary key of the dim_employees_territories
+        description: Chave Surrogate
         tests:
           - unique
           - not_null
+      - name: employee_id
+        description: Chave Primária
+        tests:
+          - unique
+      - name: first_name
+        description: Primeiro Nome
+      - name: last_name
+        description: Ultimo Nome
+      - name: title
+      - name: title_of_courtesy
+      - name: territory_description
+      - name: region_description
+      - name: birth_date
+      - name: hire_date

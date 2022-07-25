@@ -4,7 +4,27 @@ models:
   - name: dim_customer
     columns:
       - name: customer_sk
-        description: The primary key of the customer
+        description: Chave surrogate
         tests:
           - unique
           - not_null
+      - name: customer_id
+        description: Chave Primária
+        tests:
+          - unique
+      - name: country
+        description: País do Cliente
+      - name: city
+        description: Cidade do Cliente
+      - name: fax
+      - name: postal_code
+      - name: customer_address
+        description: Endereço do Cliente
+      - name: region
+      - name: contact_name
+        description: Contato da Empresa com o Cliente
+      - name: phone
+      - name: company_name
+        description: Nome da Empresa com o Cliente
+      - name: contact_title
+      

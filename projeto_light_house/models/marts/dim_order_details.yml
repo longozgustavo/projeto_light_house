@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: dim_order_details
+    columns:
+      - name: order_sk
+        description: Chave Surrogate
+        tests:
+          - unique
+          - not_null
+      - name: order_id
+        description: Chave Primária
+        tests:
+          - unique
+      - name: customer_id
+        description: Chave Estrangeira da dimensao Customer
+      - name: employee_id
+        description: Chave Estrangeira da dimensao Employee
+      - name: product_id
+        description: Chave Estrangeira da dimensao Product
+      - name: order_date
+        description: Data de Venda
+      - name: required_date
+      - name: shipped_date
+        description: Data de Entrega
+      - name: ship_via
+      - name: unit_price
+        description: Valor de cada Venda
+      - name: quantity
+      - name: discount

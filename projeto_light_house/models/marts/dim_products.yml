@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: dim_products
+    columns:
+      - name: product_sk
+        description: Chave Surrogate
+        tests:
+          - unique
+          - not_null
+      - name: product_id
+        description: Chave Primária
+        tests:
+          - unique
+      - name: supplier_id
+        description: Chave Estrangeira
+      - name: category_id
+        description: Chave Estrangeira
+      - name: product_name
+        description: Nome do Produto
+      - name: quantity_per_unit
+        description: Nome do Produto
+      - name: unit_price
+        description: Preço unitario do Produto
+      - name: units_in_stock
+        description: Unidades do Produto em Estoque
+      - name: units_on_order
+      - name: reorder_level
+      - name: discontinued
+        description: Produtos descontinuados
+      - name: category_name
+        description: Categoria do produto
+      - name: category_description
+      - name: picture
