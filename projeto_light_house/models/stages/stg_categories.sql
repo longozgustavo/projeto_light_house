@@ -1,7 +1,7 @@
 with stg_categories as 
 (
     select 
-        category_id as id
+        category_id
         ,category_name 		
         ,description	as `category_description`		
         ,picture

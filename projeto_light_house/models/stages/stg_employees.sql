@@ -2,7 +2,7 @@
 with stg_employees as 
 (
     select 
-        employee_id as id	
+        employee_id
         ,last_name	
         ,first_name			
         ,title			
